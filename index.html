@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Peliculas mas populares</title>
+	<style>
+		/* Estilos para la barra de navegación */
+		.navbar {
+			background-color: #000000;
+			overflow: hidden;
+		}
+
+		.navbar a {
+			display: block;
+			float: left;
+			color: #ffffff;
+			text-align: center;
+			padding: 14px 16px;
+			font-size: 18px;
+		}
+
+		.navbar a:hover {
+			background-color: #ddd;
+		}
+
+		.navbar a.active {
+			background-color: rgb(167, 76, 175);
+			color: white;
+		}
+	</style>
+<body>
+	<div class="navbar">
+		<a class="active" href="#">Inicio</a>
+		<a href="#">Películas</a>
+		<a href="#">Series</a>
+		<a href="#">Actores</a>
+	</div>
+
+	<div class="contenedor" id="contenedor"></div>
+
+	<div class="paginacion">
+		<button id="btnAnterior">Anterior</button>
+		<button id="btnSiguiente">Siguiente</button>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
